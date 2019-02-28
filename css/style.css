@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  min-width: 100%;
+  width: 1820px;
 
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 13px;
@@ -16,7 +16,7 @@ a {
 }
 
 .container {
-  width: 940px;
+  width: 1800px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -42,7 +42,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  width: 100%;
   min-height: 900px;
 
   background-image: url("../img/header-background.jpg");
@@ -56,16 +55,21 @@ input[type="radio"].visually-hidden {
 
   width: 100%;
   min-height: 75px;
-  background-color: #1a2633;
-  opacity: 0.75;
+  background-color: rgba(26, 36, 49, 0.75);
+  border-bottom: 1px solid #4c535d;
 }
 
 .header-top a{
+  display: inline-block;
+
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 13px;
   line-height: 25.6px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
+
+  text-align: center;
+  vertical-align: center;
 }
 
 .header-menu,
@@ -74,4 +78,102 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   list-style: none;
+}
+
+.header-top .customer-button {
+  padding-top: 26px;
+  padding-left: 19px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  border-right: 1px solid #4c535d;
+}
+
+.header-top .logo {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 33.27px;
+  font-weight: 900;
+  line-height: 65.66px;
+  letter-spacing: -3px;
+
+  padding-top: 4px;
+  padding-left: 20px;
+  padding-right: 29px;
+  padding-bottom: 0px;
+  border-right: 1px solid #4c535d;
+
+  margin: 0;
+}
+
+.header-top .header-menu {
+  justify-content: space-around;
+  align-content: center;
+
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 522px;
+  padding-top: 6px;
+
+  font-family: "Montserrat", Arial,sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 600;
+
+  border-right: 1px solid #4c535d;
+}
+
+.header-menu li {
+  padding-right: 35px;
+}
+
+.header-top .header-social {
+  padding-top: 14px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  padding-right: 7px;
+
+  margin: 0;
+
+  border-right: 1px solid #4c535d;
+}
+
+.header-social li a{
+  width: 30px;
+  height: 30px;
+
+  padding-right: 35px;
+  padding-top: 12px;
+}
+
+.header-top .basket {
+  padding-top: 24px;
+  padding-left: 21px;
+  padding-right: 29px;
+  padding-bottom: 0px;
+  border-right: 1px solid #4c535d;
+}
+
+.header-top .search-button {
+  padding-top: 24px;
+  padding-left: 19px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  border-right: 1px solid #4c535d;
+}
+
+.main-header p{
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 705px;
+}
+
+.promo-name {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 203.66px;
+  line-height: 147.24px;
+  letter-spacing: -3px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
