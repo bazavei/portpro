@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
+@font-face{
+  font-family:"Bebas Neue W01 Regular";
+  src:url("../Fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
+  src:url("../Fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"),url("../Fonts/1444649/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"),url("../Fonts/1444649/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"),url("../Fonts/1444649/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype");
+}
+
 .container {
   width: 1800px;
   margin: 0 auto;
@@ -160,20 +166,661 @@ input[type="radio"].visually-hidden {
   border-right: 1px solid #4c535d;
 }
 
-.main-header p{
-  margin: 0;
-  margin-top: 10px;
-  margin-left: 10px;
+.main-header .header-promo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
   width: 705px;
+  margin: 0;
+  margin-top: 161px;
+  margin-left: 188px;
+  padding: 0;
 }
 
 .promo-name {
+  display: inline-block;
+
+  width: 700px;
+  margin-bottom: 27px;
+
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 700;
   font-size: 203.66px;
   line-height: 147.24px;
-  letter-spacing: -3px;
+  letter-spacing: -14px;
   color: white;
   text-transform: uppercase;
   text-align: center;
+  vertical-align: middle;
+}
+
+.stock {
+  width: 577px;
+  padding-left: 70px;
+  margin-bottom: 52px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 20.65px;
+  font-weight: bold;
+  line-height: 29.5px;
+  letter-spacing: 7.6px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  align-self: center;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 17.25px;
+  line-height: 21.59px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+
+  background-color: #3954d9;
+  border-radius: 30px;
+}
+
+.header-promo .button {
+  width: 120px;
+  padding-left: 23px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 11px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 0px;
+  top: -73px;
+  z-index: 1;
+  background-color: #ffffff;
+  margin: auto;
+  margin-bottom: 0;
+
+  width: 1500px;
+
+  box-shadow:
+    10px 61px 120px rgba(0, 0, 0, 0.1),
+    -10px 61px 120px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-option {
+  display: flex;
+}
+
+.shipping-list{
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shipping-list-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  width: 374px;
+  min-height: 374px;
+  border-right: 1px solid #c7c7c7;
+}
+
+/* .shipping-list-item::before {
+  content: "";
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 1px;
+  left: 1px;
+  background-image: url("../img/spritesheet.png");
+} */
+
+.shipping-list-item:last-of-type {
+  border-color: transparent;
+}
+
+.fly::before {
+  content: "";
+  position: absolute;
+  top: 69px;
+  left: 160px;
+  width: 45px;
+  height: 60px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -58px 5px;
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 167px;
+  width: 50px;
+  height: 60px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -5px 5px;
+}
+
+.lifebuoy::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 158px;
+  width: 50px;
+  height: 60px;
+  background-image: url("../img/spritesheet.png");
+  background-position: -107px 5px;
+}
+
+.shipping-list-item h3 {
+  width: 374px;
+
+  margin-top: 167px;
+  margin-bottom: 17px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -1px 0 0 #8e9db1;
+  font-family: "Bebas Neue W01 Regular", Ariail, sans-serif;
+  font-size: 32.84px;
+  font-weight: 400;
+  line-height: 25.65px;
+  letter-spacing: -1px;
+
+  color: #0d2e57;
+}
+
+.shipping-list-item p {
+  width: 235px;
+  margin-left: 69.5px;
+  margin-right: 69.5px;
+  margin-bottom: 13px;
+  text-align: center;
+
+  font-family: "Montserrat", arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #8a8a8a;
+}
+
+.shipping-list-item a{
+  display:inline-block;
+  vertical-align: middle;
+  width: 75px;
+  margin: 0;
+  margin-left: 150px;
+  padding: 0;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 25.65px;
+  letter-spacing: 0;
+}
+
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 751px;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f0f0;
+}
+
+.promo-content {
+  width: 750px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo h2 {
+  width: 245px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 250.25px;
+  margin-top: 117px;
+  margin-bottom: 23px;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 20.43px;
+  font-weight: 600;
+  line-height: 25.07px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.promo h3 {
+  width: 430px;
+  margin: 0;
+  margin-left: 172px;
+  margin-bottom: 36px;
+  padding: 0;
+  font-family: "Bebas Neue W01 Regular", Ariail, sans-serif;
+  font-size: 42.99px;
+  line-height: 44.1px;
+  letter-spacing: -0.8px;
+  color: #0d2e57;
+}
+
+.promo p{
+  width: 485px;
+  margin: 0;
+  margin-left: 128px;
+  margin-bottom: 33px;
+  padding: 0;
+  word-break:break-all;
+
+  font-family: "Montserrat", arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.15px;
+  color: #8a8a8a;
+}
+
+.promo span {
+  letter-spacing: -0.1px;
+}
+
+.promo-content .new-price {
+  margin-left: 240px;
+
+  font-family: "Montserrat", Ariail, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 62.4px;
+  color: #3954d9;
+}
+
+.promo-content .old-price {
+  margin: 0;
+  margin-left: 45px;
+  padding: 0;
+
+  font-family: "Montserrat", Ariail, sans-serif;
+  font-size: 32.61px;
+  font-weight: 600;
+  line-height: 58.14px;
+  letter-spacing: 1px;
+  text-decoration: line-through;
+  color: black;
+}
+
+.time-counting {
+  display: flex;
+  margin: 0;
+  margin-left: 225px;
+  margin-top: 46px;
+}
+
+.time-counting-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 18px;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  margin: 0;
+  margin-right: 21px;
+  margin-bottom: 42px;
+  /* width: 90px;
+  height: 105px; */
+  background-color: white;
+  border-radius: 20px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 38.22px;
+  font-weight: 600;
+  line-height: 31.89px;
+  color: #2d2b27;
+}
+
+.time-counting-item span {
+  position: relative;
+  font-size: 11.04px;
+  line-height: 8.49px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 22px;
+}
+
+.time-counting-item span::before {
+  content: "....";
+  top: -15px;
+  left: 20px;
+  position: absolute;
+  width: 15px;
+  height: 2px;
+}
+
+.promo-content .button {
+  width: 85px;
+  margin: 0;
+  margin-left: 323px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 13px;
+}
+
+.promo-photo {
+  padding: 0;
+  margin: 0;
+}
+
+.feature-product {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.feature-product-item {
+  width: 374px;
+  min-height: 375px;
+  border-right: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.product-item-image {
+  width: 330px;
+  height: 232px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.product-item-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.feature-product-item h3 {
+
+  padding: 0;
+  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-family: "Bebas Neue W01 Regular", Ariail, sans-serif;
+  font-size: 25px;
+  line-height: 25.65px;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  color: #0d2e57;
+}
+
+.feature-product-item b {
+  padding: 0;
+  padding-left: 10px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 25.65px;
+  color: #3753da;
+}
+
+.feature-product-item .new-price {
+  padding: 0;
+  padding-left: 50px;
+}
+
+.feature-product-item .previous-price {
+  color: #838383;
+  text-decoration: line-through;
+}
+
+.feature-product-section {
+  width: 375px;
+  background-color: #232323;
+}
+
+.feature-product-section h3 {
+  margin: 0;
+  margin-top: 57px;
+  margin-bottom: 17px;
+
+  padding: 0;
+  padding-left: 50px;
+
+  font-family: "Bebas Neue W01 Regular", Ariail, sans-serif;
+  font-size: 59.62px;
+  font-weight: 400;
+  line-height: 61.16px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.feature-product-section p{
+  width: 230px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  padding-left: 52px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5.7px;
+  color: white;
+}
+
+.feature-product-section .button {
+  margin: 0;
+  margin-left: 52px;
+
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+
+  font-size: 13px;
+}
+
+.feature-product-banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 750px;
+  background-color: black;
+  background-image: url("../img/banner-background-image.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-product-banner b{
+  display: inline-block;
+  width: 351px;
+  margin: 0;
+  margin-top: 62px;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-left: 50px;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 59.62px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 61.16px;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.feature-product-banner .button {
+  align-self: flex-start;
+
+  margin: 0;
+  margin-left: 55px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-size: 13px;
+  line-height: 16.27px;
+  background-color: #65cbff;
+  color: black;
+}
+
+.feature-product .full {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+  padding-bottom: 23px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 25.65px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  color: #3753da;
+}
+
+.product-gallery-list,
+.popular-makers-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+}
+
+.product-gallery-item {
+  width: 375px;
+  height: 375px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.product-gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.popular-makers-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 249px;
+  height: 251px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+  border-left: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.page-footer {
+  min-height: 775px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -162px;
+  left: 0px;
+
+  background-image: url("../img/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-footer-group {
+  display: flex;
+  margin: 170px auto 0 190px;
+}
+
+.page-footer-item {
+  /* margin-right: 107px; */
+  width: 265px;
+}
+
+.page-footer-item h3 {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #3753da;
+}
+
+.page-footer-item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer-item a {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.social {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 300px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list li  {
+  width: 43px;
+  height: 43px;
+
+  background-image: url("../img/sprite-social.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 50%
+}
+
+.social-list  {
 }
