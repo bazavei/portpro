@@ -758,19 +758,23 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer-group {
+  width: 1500px;
   display: flex;
-  margin: 170px auto 0 190px;
+  margin: 170px auto 0 150px;
 }
 
 .page-footer-item {
-  /* margin-right: 107px; */
-  width: 265px;
+  /* width: 265px; */
+  margin: 0 auto;
+  margin-left: 38px;
+  margin-right: 95px;
 }
 
 .page-footer-item h3 {
+  padding: 0;
   margin-top: 10px;
   margin-left: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-right: 0px;
 
   font-family: "Poppins", Arial, sans-serif;
@@ -788,6 +792,11 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
+.page-footer-item li {
+  margin: 0;
+  padding: 0;
+}
+
 .page-footer-item a {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 13px;
@@ -796,23 +805,18 @@ input[type="radio"].visually-hidden {
   color: white;
 }
 
-.social {
-  /* display: flex;
-  flex-wrap: wrap; */
-  width: 300px;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  width: 383px;
 }
 
-.social-list li  {
+.social-list a {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  padding: 0;
+
   width: 43px;
   height: 43px;
 
@@ -822,5 +826,6 @@ input[type="radio"].visually-hidden {
   border-radius: 50%
 }
 
-.social-list  {
+.social {
+  margin-left: 100px;
 }
